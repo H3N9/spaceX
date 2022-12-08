@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+h1,
+h2 {
+    font-family: 'Viga', sans-serif;
+}
+
+p {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+}
+.boxImage {
+    width: 100%;
+    position: relative;
+    background-image: url('../images/home/home.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    height: 100vh;
+    z-index: -2;
+}
+#opcitryWrapI {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#name-i-image {
+    width: 50vw;
+    margin-left: 5vw;
+    margin-bottom: 3vh;
+}
+
+#detail-i-image {
+    margin-left: 5vw;
+    width: 50%;
+    color: white;
+    transition: 0.4s;
+    border-radius: 1vh;
+    padding: 2vh;
+    font-size: 2vh;
+}
+
+/*Histories*/
+#boxHistories {
+    background-image: url('../images//home/bg.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#gradientColor {
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    height: 75vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+#box-h-text {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+#box-h-text > h1 {
+    font-size: 8vw;
+}
+#box-h-text > p {
+    font-size: 2.5vw;
+}
+
+/*Card*/
+#boxCard {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#boxCard-C-G {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#boxCardContent {
+    overflow-y: scroll;
+    width: 100%;
+    padding: 5vh 1vh 5vh 1vh;
+    display: flex;
+    flex-direction: column;
+}
+#boxCardContent::-webkit-scrollbar {
+    display: none;
+}
+#boxBardContent {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#gradientColor-U {
+    z-index: 1;
+    height: 5vh;
+    position: absolute;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+#gradientColor-D {
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 15%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+#viewMore {
+    width: 50%;
+    height: 5vh;
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.boxView {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
+    padding-bottom: 4%;
+}
+
+#triangleMore {
+    width: 2vw;
+    height: 2vw;
+    border-color: #fff;
+    transform: rotate(225deg);
+}
+.shapes {
+    position: absolute;
+    border: solid black;
+    border-width: 0.5vw 0 0 0.5vw;
+    z-index: 1;
+    transition: 0.5s;
+}
+#endingLine {
+    background-color: black;
+    width: 100%;
+    height: 20vh;
+}

@@ -1,0 +1,157 @@
+#launch-i {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/launch/bg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5vw;
+}
+#searchBar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#launchDetails {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+#boxDetail {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 100%;
+}
+#endling {
+    width: 100%;
+    height: 5vh;
+    background-color: black;
+}
+
+.selectBox {
+    display: flex;
+    flex-direction: row;
+}
+
+#slct {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    background: #000;
+    background-image: none;
+    flex: 1;
+    padding: 0 0.5em;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+/* Remove IE arrow */
+#slct::-ms-expand {
+    display: none;
+    border: 1px white solid;
+}
+/* Custom Select */
+.select {
+    position: relative;
+    display: flex;
+    width: 10vw;
+    min-width: 130px;
+    height: 2em;
+    line-height: 2;
+    background: #2c3e50;
+    border: 2px white solid;
+    margin-right: 10px;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: 0.25s all ease;
+    -o-transition: 0.25s all ease;
+    transition: 0.25s all ease;
+}
+/* Transition */
+.select:hover::after {
+    color: #f39c12;
+}
+
+.input {
+    border: 3px white solid;
+    min-width: 300px;
+    padding-right: 10px;
+}
+
+.input > input {
+    width: 100%;
+    min-width: 300px;
+    height: 2em;
+    border: 0;
+    padding: 0;
+    padding-left: 10px;
+    line-height: 2;
+    background-color: #000;
+    color: white;
+    font-size: 1em;
+}
+
+@media (max-width: 800px) {
+    #searchBar {
+        flex-direction: column-reverse;
+        justify-items: flex-start;
+        align-items: flex-start;
+        margin-left: 10%;
+        width: 90%;
+    }
+
+    .selectBox {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .select {
+        width: 20%;
+        margin-bottom: 10px;
+    }
+
+    .input {
+        width: 80%;
+        margin-bottom: 10px;
+        min-width: 250px;
+    }
+    .input > input {
+        width: 100%;
+        min-width: 0px;
+    }
+}
+
+@media (max-width: 530px) {
+    #slct,
+    .input > input {
+        font-size: 0.8em;
+    }
+}
