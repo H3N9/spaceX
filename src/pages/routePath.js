@@ -58,7 +58,7 @@ const RoutePath = () => {
                 <NavBar addColor={stylePacks.navBar} />
                 <div id="content">
                     <Switch>
-                        <Route exact path="/CheapApp">
+                        <Route exact path="/">
                             <Home />
                         </Route>
                         <Route path="/launch">

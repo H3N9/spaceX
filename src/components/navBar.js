@@ -29,12 +29,12 @@ const NavBar = ({ addColor }) => {
         <div className={addColor}>
             <BoxNav
                 text={'image'}
-                path="/CheapApp"
+                path="/"
                 menuActive={"boxNav"}
             />
             {homeImg && (<BoxNav
                 text={'Home'}
-                path="/CheapApp"
+                path="/"
                 menuActive={homeMenuActive}
             />)}
             <BoxNav
